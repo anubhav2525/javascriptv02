@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("Hello world");
+    console.clear();
+
+    console.info("Information message");
+    console.clear();
+
+    console.error("Error Message");
+    console.clear();
+
+    console.warn("Warning message");
+    console.clear();
+
+    console.group("Group 1");
+    console.log("Message 1");
+    console.log("Message 2");
+    console.log("Message 3");
+    console.groupEnd();
+    console.clear();
+
+    console.time("Timer"); // start
+    console.log("Timing goes");
+    console.timeEnd("Timer"); // end
+    console.clear();
+
+    //object
+    let obj = {
+      name: "Anubhav",
+      age: 21,
+      rid: "R42174",
+    };
+    console.table(obj);
+    console.clear();
+
+    console.log(obj);
+    console.dir(obj);
+    console.clear();
+
+    // variable
+    let a = 10;
+    console.assert(a > 4, "Assertion Failed"); // no errror if true
+    console.assert(a > 14, "Assertion Failed"); // error if false
+    console.clear();
+  </script>
+</html>
